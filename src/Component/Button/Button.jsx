@@ -4,7 +4,7 @@ import './Button.css';
 function Clicker() {
   function HandleCilck(e) {
     e.preventDefault();
-    
+    alert('coba')
   }
   return (
     <button className="btn-alert" onClick={HandleCilck}>
