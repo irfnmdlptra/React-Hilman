@@ -50,7 +50,7 @@ class Todolist extends Component {
             <label class="title">List Sederhana</label>
             <span class="subtitle">Ingin mengatur hidup Anda dengan lebih efektif dan efisien? Yuk, Tulis List Anda</span>
           </div>
-          <input type="text" value={this.state.todoItem} onChange={this.handleChange} placeholder="Masukkan List" title="Enter your e-mail" name="email"  class="input_field" />
+          <input type="text" value={this.state.todoItem} onChange={this.handleChange} placeholder="Masukkan List" title="Enter your e-mail" name="email"  class="input_field" required  />
           <button className="submit">Buat</button>
         </form>
       </div>
