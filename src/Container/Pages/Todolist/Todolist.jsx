@@ -9,16 +9,25 @@ class Todolist extends Component {
             items: []
         }
     }
-    handleSubmit(e){
-        e.preventDefault()
-        console.log('terpanggilkan')
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.setState({
+            items   : [...this.state.items, this.state.todoItem],
+            todoItem: ''
+        })
+    }
+
+    handleChange = (event) => {
+        this.setState({
+            todoItem: event.target.value
+        })
     }
 
     render() {
         return (
             <form action="" onSubmit={this.handleSubmit}>
-                <input type="text" />
-                <button>Kirim</button>
+                <input type="text" value={this.state.todoItem} onChange={this.handleChange} />
+                <button>Kirim</button> 
             </form>
         )
     }
