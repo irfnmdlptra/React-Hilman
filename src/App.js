@@ -1,25 +1,17 @@
-import React, { Component, createElement } from 'react'; 
-import logo from './bunga.png';
-import Timer from './Component/Timer/Timer.jsx';
-// import Button from './Component/Button/Button.jsx';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
-import BookLoader from './Component/Snake/BookLoader';
+import About from './Pages/About';
+import Home from './Pages/Home';
 
-// STATE
-class App extends Component {
-  render() {
-    return (
-          <div className="App">
-            <header className="App-header">
-             <img src={logo} className="App-logo" alt="logo" />
-             <Timer start="0"/>
-             <BookLoader/>
-            </header>
-          </div>
-        );
-  }
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </Router>
+  );
 }
-
-
 
 export default App;

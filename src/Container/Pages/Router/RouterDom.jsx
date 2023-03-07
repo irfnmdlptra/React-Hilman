@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import {BrowserRouter, Route, Link} from 'react-router-dom'
-import './RouterDom';
 
 function Home (){
     return <h2>Halaman Home </h2>
@@ -15,20 +14,18 @@ class RouterDom extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
-                    <nav>
-                        <li><Link to='/'></Link></li>
-                        <li><Link to='users'> User </Link></li>
-                    </nav>
+                <nav>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/users'> User </Link></li>
+                </nav>
 
-                    <main>
-                        <Route path="/" exact component={Home} />
-                        <Route path="/users" exact component={ListView} />
-                    </main>
-                </div>
+                <main>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/users" element={<ListView />} />
+                </main>
             </BrowserRouter>
         )
     }
 }
 
-export default RouterDom
+export default RouterDom;
