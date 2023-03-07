@@ -1,7 +1,8 @@
 import React, {Component} from "react";
+import RouterDom from "../Router/RouterDom";
 // import Todolist from "../Todolist/Todolist";
 // import Api from "../Api/Api";
-import BlogPost from "../BlogPost/BlogPost";
+// import BlogPost from "../BlogPost/BlogPost";
 import './Home.css';
 
 class Home extends Component {
@@ -9,7 +10,7 @@ class Home extends Component {
         return (
             <div>
                 <div className="judul"></div>
-                <BlogPost/>
+                <RouterDom/>
             </div>
         )
     }
