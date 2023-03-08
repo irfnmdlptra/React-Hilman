@@ -1,6 +1,7 @@
-import Loader from "../Components/Loader"
+// import Ape from "../Ap";
+import Not from "../Components/Load";
 
 const NotFound = () => {
-    return <Loader/>
+    return <Not/>
 }
 export default NotFound

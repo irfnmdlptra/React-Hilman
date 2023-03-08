@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+// import Not from './Components/Load';
+// import App from './App';
 import './index.css';
-// import Home from './Pages/Home'
+// import Home from './Container/Pages/Home/Home';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './Container/Pages/Router/RouterDom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
