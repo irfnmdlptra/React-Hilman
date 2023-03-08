@@ -1,7 +1,6 @@
-import Kompas from "../Kompas"
+import Loader from "../Components/Loader"
 
 const NotFound = () => {
-    return <Kompas/>
+    return <Loader/>
 }
-
 export default NotFound

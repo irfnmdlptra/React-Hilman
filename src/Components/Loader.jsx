@@ -1,7 +1,7 @@
-import Spiner from "../Container/Components/Spiner/Spiner"
+import Kompas from '../Kompas'
 
-const Load = () => {
-    return <Spiner/>
+const Loader = () => {
+    return <Kompas/>
 }
 
-export default Load
+export default Loader

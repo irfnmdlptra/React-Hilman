@@ -11,5 +11,4 @@ function Kompas() {
     </div>
   );
 }
-
-export default Kompas;
+export default Kompas
