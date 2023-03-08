@@ -37,7 +37,7 @@ class Navbar extends Component {
         </div>
       </BrowserRouter>
     );
-  } c
+  } 
 }
 
 export default Navbar;
